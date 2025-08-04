@@ -93,7 +93,35 @@ This project details the creation of a honeypot environment using Microsoft Azur
 <br>
 <img src="https://i.imgur.com/e4UPHsn.png" alt="Project Steps"/>
 <br>
-2. Docker Installation: Docker is installed on the Ubuntu VM to simplify the deployment of MISP.
+2. Docker Installation: Docker is installed on the Ubuntu VM to simplify the deployment of MISP. Connect to the Ubuntu machine via Azure's CLI and write the following commands to download and configure docker. Lastly Verify that docker is configured.
+<br>
+<img src="https://i.imgur.com/oeTAVxP.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/gfhMQKW.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/Ya20RPY.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/ssPpupA.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/e2lsHab.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/K37bMFm.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/05hML7z.png" alt="Project Steps"/>
+<br>
+3. MISP Deployment: The MISP platform is deployed on the Ubuntu VM using Docker. For this, I will use the github documentation: github.com/MISP/misp-docker. After following the photos, don't forget to spin up this container by typing "sudo docker compose up" command.
+<br>
+<img src="https://i.imgur.com/09jGrGs.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/HOVHeQD.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/xJwiXCb.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/EKOB3Z6.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/5DXcPf7.png" alt="Project Steps"/>
+<br>
+4. MISP Configuration: MISP is configured after deployment, which includes setting up user accounts and adding official threat intelligence feeds. To get to the GUI of MISP, we must head to the IP address with the dedicated port running MISP. (Remember to make sure your ports are open and accessible so adjust firewall settings accordingly. After getting into MISP, change default credentials, import the json from MISP's official website to import the feeds to MISP. Follow these steps carefully as they are crucial.
 <br>
 <img src="" alt="Project Steps"/>
 <br>
@@ -109,6 +137,11 @@ This project details the creation of a honeypot environment using Microsoft Azur
 <br>
 <img src="" alt="Project Steps"/>
 <br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+
 
 <img src="" alt="Project Steps"/>
 <br>
