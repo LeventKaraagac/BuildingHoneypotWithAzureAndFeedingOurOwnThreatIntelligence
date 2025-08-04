@@ -48,10 +48,73 @@ This project details the creation of a honeypot environment using Microsoft Azur
 <h3> Step 1: Honeypot VM Setup in Microsoft Azure </h3>
 1. Honeypot VM Creation: A Windows 10 Virtual Machine is created in Microsoft Azure. The RDP port 3389 is left open to the internet to serve as the honeypot.
 <br>
+<img src="https://i.imgur.com/dVcpadv.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/QU2pphM.png" alt="Project Steps"/>
+<br>
+2. Log Analytics Workspace: A Log Analytics workspace is created to collect and store the logs from the honeypot VM.
+<img src="https://i.imgur.com/QTI9dBo.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/uNnActa.png" alt="Project Steps"/>
+<br>
+3. Microsoft Sentinel Deployment: Microsoft Sentinel is deployed on top of the Log Analytics workspace to function as the SIEM.
+<img src="https://i.imgur.com/Ft5CRwT.png" alt="Project Steps"/>
+<br>
+<h3> Step 2: Data Connector and Detection Rule Configuration </h3>
+1. Windows Security Events Connector: A Data Connector is configured to send Windows Security Events from the Windows 10 honeypot VM to the Sentinel instance. This ensures all relevant login and security event data is collected.
+<img src="https://i.imgur.com/HHhnVCO.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/s2dns2W.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/wDmloHA.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/PJGSlWC.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/93cRnW6.png" alt="Project Steps"/>
+<br>
+2. Honeypot Alert Rule: A scheduled alert rule is created in Sentinel using KQL (Kusto Query Language) to trigger an incident whenever a successful RDP login occurs on the honeypot VM. This rule is a core component of the detection logic.
+<img src="https://i.imgur.com/bWeLPoX.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/Cg0f9L0.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/zbJZ07i.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/FTBtXPf.png" alt="Project Steps"/>
+<br>
+3. Bastion Deployment and alert trigger checking: Deploy bastion within Azure and after logging in to the windows via rdp port 3389, check if the alert gets triggered.
+<br>
+<img src="https://i.imgur.com/sknD8p5.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/baumO2O.png" alt="Project Steps"/>
+<br>
+<h3> Step 3: MISP Threat Intelligence Platform Deployment</h3>
+1. Ubuntu VM Creation: An Ubuntu Server 22.04 LTS VM is provisioned in Azure to host the MISP platform. Connect via SSH from Azure settings.
+<img src="https://i.imgur.com/ZxbmkHj.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/e4UPHsn.png" alt="Project Steps"/>
+<br>
+2. Docker Installation: Docker is installed on the Ubuntu VM to simplify the deployment of MISP.
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
+<img src="" alt="Project Steps"/>
+<br>
 <img src="" alt="Project Steps"/>
 <br>
 
-<h3> Step 2: Network Configuration</h3>
+<img src="" alt="Project Steps"/>
+<br>
+
+</p>
+
 
 
 <h2>Key Learning/Reflections</h2>
