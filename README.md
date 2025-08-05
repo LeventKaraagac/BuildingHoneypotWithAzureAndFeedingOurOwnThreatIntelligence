@@ -142,12 +142,30 @@ This project details the creation of a honeypot environment using Microsoft Azur
 <img src="https://i.imgur.com/hdOPkqW.png" alt="Project Steps"/>
 <br>
 <h3> Step 4: Sentinel & MISP Integration</h3>
-1. 
-
-
-<img src="" alt="Project Steps"/>
+1. Azure API Key for MISP and Function App Creation: An API key is generated in MISP to allow external applications, such as a Function App, to access its data. First we must download the data connected specifically for MISP though. Then a Python-based Function App is created in Azure to serve as the bridge between MISP and Sentinel. The Function App is configured to use the MISP API to pull threat intelligence data and feed it directly into Microsoft Sentinel. This process enriches the SIEM with custom threat data.
 <br>
-
+<img src="https://i.imgur.com/drFETh8.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/Dtg1CW9.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/0cjhplE.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/5mueECv.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/d0dfMdb.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/hmRDZgd.png" alt="Project Steps"/>
+<br>
+2. Sentinel Threat Intelligence Creation: Within Sentinel, a threat intelligence feed is created that receives data from the Function App, making the MISP data available for detections and analytics.
+<br>
+<img src="https://i.imgur.com/T2md5ga.png" alt="Project Steps"/>
+<br>
+<img src="https://i.imgur.com/IfD3iZb.png" alt="Project Steps"/>
+<br>
+3. Couple hours after what Sentinel looked like:
+<br>
+<img src="https://i.imgur.com/Q8XyjOK.png" alt="Project Steps"/>
+<br>
 </p>
 
 
