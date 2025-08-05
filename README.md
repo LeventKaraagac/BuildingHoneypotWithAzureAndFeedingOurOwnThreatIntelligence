@@ -123,24 +123,26 @@ This project details the creation of a honeypot environment using Microsoft Azur
 <br>
 4. MISP Configuration: MISP is configured after deployment, which includes setting up user accounts and adding official threat intelligence feeds. To get to the GUI of MISP, we must head to the IP address with the dedicated port running MISP. (Remember to make sure your ports are open and accessible so adjust firewall settings accordingly. After getting into MISP, change default credentials, import the json from MISP's official website to import the feeds to MISP. Follow these steps carefully as they are crucial.
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/2c0YgQV.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/COOmW3t.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/9fsvhpj.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/vuD3UK8.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/TJ9PWam.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/AYjYtiE.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/5fJvpkJ.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/5MsXEsm.png" alt="Project Steps"/>
 <br>
-<img src="" alt="Project Steps"/>
+<img src="https://i.imgur.com/hdOPkqW.png" alt="Project Steps"/>
 <br>
+<h3> Step 4: Sentinel & MISP Integration</h3>
+1. 
 
 
 <img src="" alt="Project Steps"/>
